@@ -1,0 +1,4 @@
+<div style="border: 1px solid green;">
+    <input type="text" name="personName" placeholder="enter your name" #personName>
+    <button (click)="changeNameEvent.emit(personName.value)">send name to parent component</button>
+</div>
