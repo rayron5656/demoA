@@ -11,6 +11,7 @@ import { TagsComponent } from './tags/tags.component';
 import { OutputComponent } from './output/output.component';
 import { TwowayComponent } from './twoway/twoway.component';
 import { FormsModule } from '@angular/forms';
+import { PipesComponent } from './pipes/pipes.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FormsModule } from '@angular/forms';
     CakeComponent,
     TagsComponent,
     OutputComponent,
-    TwowayComponent
+    TwowayComponent,
+    PipesComponent
   ],
   imports: [
     BrowserModule,

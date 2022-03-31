@@ -1,0 +1,12 @@
+<hr>
+<p>pipes works!</p>
+<p>Birth <span style="font-weight: 900;"> {{birth | date}}</span></p>
+<p>Birth <span style="font-weight: 900;"> {{birth | date : 'd/M/y/'}}</span></p>
+<p>pipe uppercase : {{'upper'| uppercase}}</p>
+<p>pipe lowercase : {{'LOWER'| lowercase}}</p>
+<p>bank fee: {{fee|percent}}</p>
+<p>currency: {{total | currency :'NIS': '₪ ' :  '1.1-2'}}</p>
+<p>slice pipe: {{'king-george' | slice:3:8}}</p>
+<pre>{{hobby | json | uppercase}}</pre>
+<p>Number pipe: {{0003.548912321 | number:'1.2-2'}}</p>
+
