@@ -12,6 +12,9 @@ import { OutputComponent } from './output/output.component';
 import { TwowayComponent } from './twoway/twoway.component';
 import { FormsModule } from '@angular/forms';
 import { PipesComponent } from './pipes/pipes.component';
+import { CustomPipe } from './pipes/custom.pipe';
+import { BtcusdPipe } from './pipes/btcusd.pipe';
+import { FormValidationComponent } from './form-validation/form-validation.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { PipesComponent } from './pipes/pipes.component';
     TagsComponent,
     OutputComponent,
     TwowayComponent,
-    PipesComponent
+    PipesComponent,
+    CustomPipe,
+    BtcusdPipe,
+    FormValidationComponent
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,4 @@
+<h1>pipes</h1>
 <hr>
 <p>pipes works!</p>
 <p>Birth <span style="font-weight: 900;"> {{birth | date}}</span></p>
@@ -9,4 +10,8 @@
 <p>slice pipe: {{'king-george' | slice:3:8}}</p>
 <pre>{{hobby | json | uppercase}}</pre>
 <p>Number pipe: {{0003.548912321 | number:'1.2-2'}}</p>
+<hr>
 
+<hr>
+<p>custom pipe {{340| custom:10}}</p>
+<p>bitcoin pipe {{10 | btcusd}}</p>
