@@ -18,9 +18,20 @@ import { FormValidationComponent } from './form-validation/form-validation.compo
 import { StartRXComponent } from './start-rx/start-rx.component';
 import { UseHttpComponent } from './use-http/use-http.component';
 import {HttpClientModule} from '@angular/common/http'
+import {Routes,RouterModule, Route} from '@angular/router';
+import { Comp1Component } from './comp1/comp1.component';
+import { Comp2Component } from './comp2/comp2.component'
+import { Comp3Component } from './comp3/comp3.component';
+
+const myWebsiteRoutes:Routes = [
+  {path:'',component:Comp1Component},
+  {path:'comp2',component:Comp2Component},
+  {path:'comp3',component:Comp3Component}
+];
+
 
 @NgModule({
-  declarations: [
+  declarations: [ 
     AppComponent,
     ChildComponent,
     FatherComponent,
@@ -33,14 +44,18 @@ import {HttpClientModule} from '@angular/common/http'
     BtcusdPipe,
     FormValidationComponent,
     StartRXComponent,
-    UseHttpComponent
+    UseHttpComponent,
+    Comp1Component,
+    Comp2Component,
+    Comp3Component
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot(myWebsiteRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
