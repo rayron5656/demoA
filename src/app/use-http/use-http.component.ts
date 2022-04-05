@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MyHTTPService } from '../my-http.service';
 
 @Component({
   selector: 'app-use-http',
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UseHttpComponent implements OnInit {
 
-  constructor() { }
+  users:any = [];
+  constructor(private _myHttp:MyHTTPService) {
+    this._myHttp.getUsers().subscribe((usersfromserver) => this.users = usersfromserver );
+   }
 
   ngOnInit(): void {
   }

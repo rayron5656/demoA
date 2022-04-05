@@ -17,6 +17,7 @@ import { BtcusdPipe } from './pipes/btcusd.pipe';
 import { FormValidationComponent } from './form-validation/form-validation.component';
 import { StartRXComponent } from './start-rx/start-rx.component';
 import { UseHttpComponent } from './use-http/use-http.component';
+import {HttpClientModule} from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { UseHttpComponent } from './use-http/use-http.component';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
