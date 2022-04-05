@@ -15,6 +15,7 @@ import { PipesComponent } from './pipes/pipes.component';
 import { CustomPipe } from './pipes/custom.pipe';
 import { BtcusdPipe } from './pipes/btcusd.pipe';
 import { FormValidationComponent } from './form-validation/form-validation.component';
+import { StartRXComponent } from './start-rx/start-rx.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { FormValidationComponent } from './form-validation/form-validation.compo
     PipesComponent,
     CustomPipe,
     BtcusdPipe,
-    FormValidationComponent
+    FormValidationComponent,
+    StartRXComponent
   ],
   imports: [
     BrowserModule,
