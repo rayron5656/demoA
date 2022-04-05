@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { rejects } from 'assert';
-import { resolve } from 'dns';
+
 import { concatMap, from, interval, Observable, of, timer } from 'rxjs';
 
 
@@ -19,7 +18,7 @@ export class StartRXComponent implements OnInit {
   }
 
   try2(){
-    const myPromise = new Promise((resolve,rejects) => {
+    const myPromise = new Promise((resolve,reject) => {
       setTimeout(() => (resolve('resolved'),2000) );
     });
 
