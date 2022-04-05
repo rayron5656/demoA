@@ -16,6 +16,7 @@ import { CustomPipe } from './pipes/custom.pipe';
 import { BtcusdPipe } from './pipes/btcusd.pipe';
 import { FormValidationComponent } from './form-validation/form-validation.component';
 import { StartRXComponent } from './start-rx/start-rx.component';
+import { UseHttpComponent } from './use-http/use-http.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { StartRXComponent } from './start-rx/start-rx.component';
     CustomPipe,
     BtcusdPipe,
     FormValidationComponent,
-    StartRXComponent
+    StartRXComponent,
+    UseHttpComponent
   ],
   imports: [
     BrowserModule,
